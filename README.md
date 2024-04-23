@@ -10,3 +10,8 @@ AMQP stands for Advanced Message Queuing Protocol. It's a messaging protocol tha
 - `localhost:5672`: Address and port of the AMQP broker.
   - `localhost`: Indicates that the broker is running on the same machine as the application.
   - `5672`: Default port for AMQP connections.
+
+## Simulation slow subscriber
+
+<img src="assets/images/Screenshot 2024-04-24 065143.png" alt="Rabbit Image" width="100%" height="100%">
+
