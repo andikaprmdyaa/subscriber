@@ -15,3 +15,8 @@ AMQP stands for Advanced Message Queuing Protocol. It's a messaging protocol tha
 
 <img src="assets/images/Screenshot 2024-04-24 065143.png" alt="Rabbit Image" width="100%" height="100%">
 
+
+## Reflection and Running at least three subscribers
+<img src="assets/images/Screenshot 2024-04-24 070718.png" alt="Rabbit Image" width="100%" height="100%">
+
+    When we have multiple subscribers connected to the same queue in an event-driven architecture, each subscriber competes for messages from the queue. When we spawn multiple subscribers and run them concurrently, they collectively consume messages from the queue at a faster rate compared to when we have only one subscriber. This leads to quicker processing of messages and reduces the backlog in the message queue. Additionally, when we simulate multiple requests from the publisher side by running `cargo run` several times, it increases the message flow into the queue, providing more messages for the subscribers to consume. As a result, the overall throughput of the system increases, and the backlog of messages diminishes more rapidly. This is because the workload is distributed among multiple subscribers, allowing them to process messages in parallel, leading to faster overall processing.
